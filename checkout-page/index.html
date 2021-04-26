@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5" />
+  <link rel="icon" href="devchallenges.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Checkout Pages</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="header-title">Checkout</h1>
+    </header>
+
+    <main>
+      <section class="form">
+        <h4 class="form-title">Contact Information</h4>
+        <form>
+          <div class="form-control">
+            <label for="email">E-mail</label>
+            <div class="input-field">
+              <i class="fa fa-envelope icon"></i>
+              <input type="email" placeholder="Enter your email...">
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="phone">phone</label>
+            <div class="input-field">
+              <i class="fa fa-phone icon"></i>
+              <input type="text" placeholder="Enter phone number...">
+            </div>
+          </div>
+
+          <h4 class="shipping-title">Shipping Address</h4>
+          <div class="form-control">
+            <label for="fullname">Full name</label>
+            <div class="input-field">
+              <i class="fa fa-user icon"></i>
+              <input type="text" value="Rodney Cotton">
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="address">Address</label>
+            <div class="input-field">
+              <i class="fa fa-home icon"></i>
+              <input type="text" id="address" placeholder="Your address...">
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="city">City</label>
+            <div class="input-field">
+              <i class="fa fa-building icon"></i>
+              <input type="text" id="city" placeholder="Your city">
+            </div>
+          </div>
+
+          <div class="form-control split-input">
+            <div class="form-country">
+              <label for="country">Country</label>
+              <div class="input-field">
+                <i class="fa fa-globe icon"></i>
+                <div class="select-container">
+                  <select name="" id="country">
+                    <option value="" disabled selected>Your County...</option>
+                    <option value="indonesia">Indonesia</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-postal__code">
+              <label for="postcal-code">Postal code</label>
+              <div class="input-field">
+                <i class="fa fa-book icon"></i>
+                <input type="text" placeholder="Your postal code..">
+              </div>
+            </div>
+          </div>
+
+          <div class="save-information">
+            <input type="checkbox">
+            <p class="save-text">Save this information for next time</p>
+          </div>
+          <div class="form-control">
+            <input type="submit" value="Continue">
+          </div>
+        </form>
+      </section>
+
+      <section class="details-checkout">
+        <div class="details-wrapper">
+          <div class="detail-buy">
+            <img src="./images/photo1.png" alt="bag" />
+            <div class="detail-information">
+              <p class="title-item">Vintage Backbag</p>
+              <p class="detail-price">$54.99 <span class="detail-discount"><del>$94.99</del></span></p>
+              <div class="detail_quantity">
+                <span class="kurang material-icons " onclick="prevNum()">remove</span>
+                <div id="box">
+                  <span class="quantity_num">0</span>
+                </div>
+                <span class="tambah material-icons" onclick="nextNum()">add</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-buy">
+            <img src="./images/photo2.png" alt="bag" />
+            <div class="detail-information">
+              <p class="title-item">Levi Shoes</p>
+              <p class="detail-price">$74.99 <span class="detail-discount"><del>$124.99</del></span></p>
+              <div class="detail_quantity">
+                <span class="kurang material-icons " onclick="prevNum()">remove</span>
+                <div id="box">
+                  <span class="quantity_num">0</span>
+                </div>
+                <span class="tambah material-icons" onclick="nextNum()">add</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-order">
+            <hr>
+            <div class="detail-order__shipping">
+              <h4>Shipping</h4>
+              <p>$19</p>
+            </div>
+            <hr>
+            <div class="detail-order__total">
+              <h4>Total</h4>
+              <p>$148.98</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>ilham muhamad fadilah @ 2020</p>
+    </footer>
+  </div>
+
+  <script>
+    var numbers = document.getElementById('box');
+    for (i = 0; i < 100; i++) {
+      var span = document.createElement('span');
+      span.textContent = i;
+      numbers.appendChild(span);
+    }
+    var num = numbers.getElementsByTagName('span');
+    var index = 0;
+
+    function nextNum() {
+      num[index].style.display = 'none';
+      index = (index + 1) % num.length;
+      num[index].style.display = 'initial';
+    }
+    function prevNum() {
+      num[index].style.display = 'none';
+      index = (index - 1 + num.length) % num.length;
+      num[index].style.display = 'initial';
+    }
+  </script>
+</body>
+
+</html>

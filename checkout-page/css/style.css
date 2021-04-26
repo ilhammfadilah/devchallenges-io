@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --size-sm: 8px;
+  --size-md: 12px;
+  --size-lg: 24px;
+  --size-xl: 42px;
+  --size-xxl: 74px;
+  --primary-font: "Montserrat", sans-serif;
+  --primary-orange: #F2994A;
+  --gray-1: #828282;
+}
+
+::placeholder {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--gray-1);
+  font-weight: 600;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  color: #333;
+}
+
+div,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 980px;
+  margin: var(--size-lg) auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  gap: var(--size-lg);
+}
+main .form .form-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  margin-top: var(--size-xl);
+}
+main .form form {
+  margin-top: var(--size-md);
+}
+main .form form .shipping-title {
+  margin-top: var(--size-xl);
+}
+main .form form .form-control {
+  width: 100%;
+  margin-bottom: var(--size-md);
+}
+main .form form .form-control label {
+  margin-bottom: var(--size-md);
+  margin-top: var(--size-md);
+  color: #333;
+  font-weight: bold;
+  font-size: var(--size-md);
+}
+main .form form .form-control .input-field {
+  display: flex;
+  border-radius: var(--size-md);
+  border: 1px solid #828282;
+  padding: 4px;
+}
+main .form form .form-control .input-field .select-container {
+  padding: 8px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main .form form .form-control .input-field .select-container select {
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-apperance: none;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gray-1);
+}
+main .form form .form-control .input-field .select-container::after {
+  content: "expand_more";
+  font-family: "material icons";
+  position: absolute;
+  background-color: #E0E0E0;
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 22px;
+  right: 10px;
+  pointer-events: none;
+}
+main .form form .form-control .icon {
+  padding: 10px;
+  color: var(--gray-1);
+  min-width: 50px;
+  text-align: center;
+}
+main .form form .form-control label {
+  display: block;
+}
+main .form form .form-control input {
+  outline: none;
+  width: 100%;
+  border: none;
+  overflow: hidden;
+}
+main .form form .form-control select {
+  width: 100%;
+  padding: var(--size-md);
+  border-radius: var(--size-sm);
+  outline: none;
+}
+main .form form .form-control input[type=submit] {
+  width: 150px;
+  padding: 18px;
+  color: white;
+  border-radius: var(--size-md);
+  background-color: var(--primary-orange);
+  float: right;
+  font-size: 16px;
+  font-weight: 600;
+}
+main .form form .split-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+main .form form .save-information {
+  display: flex;
+  align-items: center;
+  font-size: var(--size-md);
+  font-weight: 600;
+  margin-top: var(--size-lg);
+}
+main .form form .save-information p {
+  margin-left: var(--size-sm);
+}
+main .details-checkout {
+  justify-self: end;
+}
+main .details-checkout .details-wrapper {
+  background-color: #F2F2F2;
+  border-radius: var(--size-md);
+  padding: var(--size-lg);
+  width: 390px;
+  height: auto;
+}
+main .details-checkout .details-wrapper .detail-buy {
+  display: flex;
+  margin-bottom: var(--size-lg);
+}
+main .details-checkout .details-wrapper .detail-buy img {
+  width: 150px;
+  border-radius: var(--size-sm);
+  margin-right: var(--size-lg);
+}
+main .details-checkout .details-wrapper .detail-buy .detail-information .title-item {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+main .details-checkout .details-wrapper .detail-buy .detail-information .detail-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-orange);
+}
+main .details-checkout .details-wrapper .detail-buy .detail-information .detail-price span {
+  color: #333;
+  font-size: 12px;
+  margin-left: 10px;
+}
+main .details-checkout .details-wrapper .detail-buy .detail-information .detail_quantity {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--gray-1);
+  margin-top: var(--size-lg);
+}
+main .details-checkout .details-wrapper .detail-buy .detail-information .detail_quantity .tambah {
+  color: var(--gray-1);
+  background-color: #E0E0E0;
+  cursor: pointer;
+  z-index: 1;
+}
+main .details-checkout .details-wrapper .detail-buy .detail-information .detail_quantity .kurang {
+  color: var(--gray-1);
+  background-color: #E0E0E0;
+  cursor: pointer;
+  z-index: 1;
+}
+main .details-checkout .details-wrapper .detail-buy .detail-information .detail_quantity #box span {
+  display: none;
+  font-weight: 600;
+}
+main .details-checkout .details-wrapper .detail-buy .detail-information .detail_quantity #box span:nth-child(1) {
+  display: initial;
+}
+main .details-checkout .details-wrapper .detail-order {
+  margin-top: 2rem;
+}
+main .details-checkout .details-wrapper .detail-order hr {
+  border-top: 1px solid #BDBDBD;
+}
+main .details-checkout .details-wrapper .detail-order .detail-order__shipping {
+  margin: 1rem 0;
+}
+main .details-checkout .details-wrapper .detail-order .detail-order__shipping p {
+  font-weight: 600;
+}
+main .details-checkout .details-wrapper .detail-order .detail-order__total {
+  margin: 1rem 0;
+}
+main .details-checkout .details-wrapper .detail-order .detail-order__total p {
+  font-weight: 600;
+}
+main .details-checkout .details-wrapper .detail-order > * {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 760px) {
+  main {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 12px;
+  }
+
+  .details-checkout {
+    margin: 0 auto;
+  }
+
+  .form {
+    order: 2;
+  }
+  .form .input-field {
+    width: 94%;
+  }
+}
+footer {
+  text-align: center;
+  font-size: var(--size-md);
+  font-weight: 600;
+  color: #BDBDBD;
+  margin-top: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */
