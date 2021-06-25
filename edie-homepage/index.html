@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Edie Home</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header id="header">
+		<div class="header__tittle">
+			<h2>Edie</h2>
+		</div>
+		<nav class="navigation">
+			<div class="toggle" id="toggle">
+			    <svg
+			      width="30"
+			      height="20"
+			      viewBox="0 0 30 20"
+			      fill="none"
+			      xmlns="http://www.w3.org/2000/svg"
+			    >
+			    <path
+			      d="M0.75 19.5H29.25V16.3333H0.75V19.5ZM0.75 11.5833H29.25V8.41667H0.75V11.5833ZM0.75 0.5V3.66667H29.25V0.5H0.75Z"
+			      	fill="#333333"
+			    	/>
+			    </svg>
+		  	</div>
+
+			<ul class="navigation__list">
+				<li class="navigation__item"><a href="#">Home</a></li>
+				<li class="navigation__item"><a href="#">Services</a></li>
+				<li class="navigation__item"><a href="#">Our Works</a></li>
+				<li class="navigation__item"><a href="#">Client</a></li>
+				<li class="navigation__item"><a href="#">Contact</a></li>
+
+				<svg
+	        	class="close"
+	        	width="24"
+	        	height="24"
+	        	viewBox="0 0 24 24"
+	        	fill="none"
+	        	xmlns="http://www.w3.org/2000/svg"
+		      	>
+		      	<path
+		        	d="M23.0833 3.14919L20.8508 0.916687L12 9.76752L3.14913 0.916687L0.916626 3.14919L9.76746 12L0.916626 20.8509L3.14913 23.0834L12 14.2325L20.8508 23.0834L23.0833 20.8509L14.2325 12L23.0833 3.14919Z"
+		        	fill="#333333"
+		        />
+		      	</svg>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="hero">
+		<div class="hero">
+			<div class="hero__top">
+				<p class="hero__top--question">Unhappy with your website?</p>
+				<p class="hero__featured">We create beautiful<br/> and fast web services</p>
+			</div>
+			<img src="heroImage.jpg" class="hero__image">
+			<div class="hero__bottom">
+				<p class="hero__featured">Story, emotion <br/>and purpose</p>
+				<p class="hero__bottom--text">e help transform your ideas into real world applications that will outperform your
+            	toughest competition and help you achieve your strategic goals in short period of time.</p>
+			</div>
+
+			<form id="join">
+				<p>Want us to contact you?</p>
+				<div class="form-group">
+					<input type="text" class="email__input" placeholder="Email">
+					<button class="button__join">Join</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section id="services">
+		<div class="services__wrapper">
+			<p class="services__heading">We offer high demand services</p>
+			<div class="services__card">
+				<div class="card">
+					<i class="fa fa-pencil blue"></i>
+					<p class="card__heading">UI/UX Design</p>
+					<p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+					<button class="card__button">Get Started</button>
+				</div>
+
+				<div class="card">
+					<i class="fa fa-code green"></i>
+					<p class="card__heading">Frontend</p>
+					<p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+					<button class="card__button active">Get Started</button>
+				</div>
+
+				<div class="card">
+					<i class="fa fa-code red"></i>
+					<p class="card__heading">Backend</p>
+					<p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+					<button class="card__button">Get Started</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="project">
+		<p class="project__heading">Good design means good business</p>
+		<div class="project__wrapper">
+			<div class="project__card">
+				<img src="smarthome.jpg">
+				<p class="project__tag">Full stack application</p>
+				<p class="project__name">Smart home dashboard</p>
+			</div>
+
+			<div class="project__card">
+				<img src="onboard.png">
+				<p class="project__tag">UX/UI design</p>
+				<p class="project__name">Onboard application</p>
+			</div>
+
+			<div class="project__card">
+				<img src="booking.png">
+				<p class="project__tag">Mobile application</p>
+				<p class="project__name">Booking system</p>
+			</div>
+
+			<div class="project__card">
+				<img src="juice-product.png">
+				<p class="project__tag">Front End applicati on</p>
+				<p class="project__name">Juice product homepage</p>
+			</div>
+
+			<p class="more">
+				<a href="#">See More</a>
+				<svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.65 11.65L18.86 8.86C18.54 8.54 18 8.76 18 9.21V11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13H18V14.79C18 15.24 18.54 15.46 18.85 15.14L21.64 12.35C21.84 12.16 21.84 11.84 21.65 11.65Z"
+                  fill="#2D9CDB"
+                />
+              </svg>
+			</p>
+		</div>
+	</section>
+
+	<section id="team">
+		<div class="team__wrapper">
+			<div class="text__team">
+				<p class="team__text">Meet the team</p>
+				<p class="team__heading">We are chilled and a laidback team</p>
+				<p class="team__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+
+			<div class="team__image">
+				<div class="image__left">
+					<img src="person3.png" class="image__person">
+				</div>
+				<div class="image__right">
+					<img src="person1.png" class="image__person">
+					<img src="person2.png" class="image__person">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="quote">
+		<div class="quote__wrapper">
+			<p class="quote__text">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</p>
+
+			<div class="quote__person">
+				<img src="person4.png">
+				<div class="quote__information">
+					<p class="quote__name">Carlos Tran</p>
+					<p class="quote__tilte">The Decorate Gatsby</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer">
+		<div class="footer__wrapper">
+			<nav class="footer__nav">
+				<ul class="footer__list">
+					<li class="footer__item"><a href="#">Home</a></li>
+					<li class="footer__item"><a href="#">Services</a></li>
+					<li class="footer__item"><a href="#">Our Works</a></li>
+					<li class="footer__item"><a href="#">Client</a></li>
+					<li class="footer__item"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="socials">
+				<p class="footer__title">Edie</p>
+				<a href="#"><i class="fa fa-instagram fa-footer"></i></a>
+				<a href="#"><i class="fa fa-facebook fa-footer"></i></a>
+				<a href="#"><i class="fa fa-twitter fa-footer"></i></a>
+			</div>
+
+			<form id="join__footer">
+				<p>Want us to contact you?</p>
+				<div class="form-group">
+					<input type="text" class="footer__input" placeholder="Email">
+					<button class="button__join--footer">Join</button>
+				</div>
+			</form>
+		</div>
+		<p class="copyright">created by ilham muhamad fadilah - devChallenges.io</p>
+	</section>
+
+	<script>
+		const btn = document.getElementById("toggle");
+		const menu = document.querySelector(".navigation__list");
+		btn.addEventListener("click", (e) => {
+		  e.preventDefault();
+
+		  menu.classList.add("menu-open");
+		  menu.classList.add("show");
+		  document.body.classList.add("hidden");
+		});
+
+		const close = document.querySelector(".close");
+
+		close.addEventListener("click", (e) => {
+		  e.preventDefault();
+
+		  menu.classList.remove("menu-open");
+		  menu.classList.remove("show");
+		  document.body.classList.remove("hidden");
+		});
+	</script>
+</body>
+</html>
